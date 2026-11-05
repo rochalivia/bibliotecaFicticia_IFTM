@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="images/icon.png" type="img">
+
+    <title>IFTM | Biblioteca Virtual</title>
+</head>
+
+<body>
+    <header>
+
+        <img src="images/logotipoIFTM.png" alt="logotipo de IFTM" class="logotipo">
+        <form id="buscar" class="buscar">
+            <input type="text" id="buscarNavegacao" placeholder="Busca Rápida por Título e/ou Autor" class="inputBusca">
+            <button type="submit" class="buscaLivro">Encontrar Livro</button>
+            <button type="submit" class="buscaLivroAvancada"><a href="#reservas">Busca Avançada</a></button>
+        </form>
+
+    </header>
+
+    <main>
+
+
+        <section class="hero">
+
+
+            <div class="titulo">
+                <h1>Biblioteca Virtual</h1>
+                <p>Desenvolva habilidades e evolua com a seleção de livros do <span class="coloring">Instituto Federal
+                        do
+                        Triângulo Mineiro</span>
+                </p>
+            </div>
+
+            <div class="documentacao">
+
+                <div class="cardDoc">
+                    <h2>Passo 1 - Reservas</h2>
+                    <p>As retiradas acontecem na biblioteca da escola. Através da reserva, que pode ser feita também por
+                        este portal. <br><br> Verifique a
+                        disponibilidade do exemplar
+                        e clique no botão "Reservar", localizado no card de cada livro.
+
+                    </p>
+                </div>
+                <div class="cardDoc">
+                    <h2>Passo 2 - Navegação</h2>
+                    <p>No catálogo da biblioteca explore os títulos disponíveis. <br><br>
+                        Encontre leituras que contribuam para seus estudos e desenvolvimento!
+
+                    </p>
+
+                    <a href="#livros">Acessar Catálogo;</a>
+
+
+                </div>
+
+                <div class="cardDoc">
+                    <h2>Passo 3 - Buscar</h2>
+                    <p>Já veio com algum livro em mente? Utilize o campo de busca abaixo para localizar uma obra.
+                        <br><br> Mediante disponibilidade.
+
+                    </p>
+                    <a href="">Realizar Busca;</a>
+
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+        <section class="livros" id="livros">
+            <div class="menu">
+                <h2>Categorias</h2>
+                <button id="categoriasBotao">
+                    <div class="svgDestaques"><svg viewBox="0 0 24 24" id="star_outlined" data-name="star outlined"
+                            xmlns="http://www.w3.org/2000/svg" fill="#f8f8f8">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <rect id="Rectangle_4" data-name="Rectangle 4" width="24" height="24" fill="none">
+                                </rect>
+                                <path id="Star"
+                                    d="M10,15,4.122,18.09l1.123-6.545L.489,6.91l6.572-.955L10,0l2.939,5.955,6.572.955-4.755,4.635,1.123,6.545Z"
+                                    transform="translate(2 3)" fill="none" stroke="#f8f8f8" stroke-miterlimit="10"
+                                    stroke-width="1.5"></path>
+                            </g>
+                        </svg></div> Destaques
+                </button>
+                <button id="marketingBotao">
+                    <div class="svgMarketing">
+                        <svg fill="#f8f8f8" height="200px" width="200px" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 508 508" xml:space="preserve" stroke="#f8f8f8">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M439.6,24.4c-42-6.3-99.6-9.3-159.1-8.1c-49.7,1-94.7,5.1-125.8,11.2C139.1,5.1,120,0,106,0C90.8,0,74.4,5.5,56,16.8 c-10.3,3.8-24.9,0.9-31.9-6.2C20.1,6.5,14,5.3,8.7,7.5C3.5,9.6,0,14.8,0,20.5c0,53,44.7,99.5,95.6,99.5c10.2,0,42,0,59.7-28.7 c31.1,6.1,75.9,10.2,125.2,11.1c78.5,1.3,104.7,1,159.1-8.1c48.4-8.2,68.4-17.5,68.4-35S488.2,31.7,439.6,24.4z M134,72 c-10.4,19.1-31.5,19.7-38.4,19.7c-27.1,0-52.3-20.1-62.6-46.3c24.7,4,36.2-3.5,36.9-4c14-8.8,26.2-13.2,36.1-13.2 c7.3,0,17.9,2.1,28,19.1V72z M281.1,74.2c-47-1-89.5-4.6-118.9-10.2v-9.4h0c29.4-5.6,71.8-9.3,118.9-10.2 c8.4-0.2,130.6-8.1,188.8,14.9C413.9,81.9,289.5,74.3,281.1,74.2z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M457.1,169.7c-17-19.4-42.2-30.6-69.1-30.6c-36.2,0-67.9,19.8-80.7,50.5c-14.2,33.9-48,51.7-88.4,45.9 c-23.2-3.3-41.7-13.1-53.5-28.2C148.4,185.5,122,173,93,173c-78.9,0-88.6,74.4-90.3,84.1C-6,307,6.7,358.4,38.3,402 C78,456.7,144.6,508,261.1,508c123.6,0,226.3-74.7,244.2-177.6C515.1,273.6,498,216.6,457.1,169.7z M477.5,325.5 C462,414.9,371,479.8,261.1,479.8c-100.4,0-164.8-45.8-200-94.4c-27.1-37.3-38-81.2-30.6-123.5c1.4-8.2,8.3-60.7,62.5-60.7 c20.2,0,38.5,8.6,50.2,23.5c16.4,21,41.2,34.4,71.7,38.8c53.4,7.7,99.1-16.9,118.4-62.9c8.5-20.2,29.9-33.2,54.7-33.2 c18.8,0,36.3,7.6,47.9,20.9C471.1,228.6,485.8,277.4,477.5,325.5z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M399.1,210.6c-23.9,0-43.4,19.5-43.4,43.4c0,23.9,19.5,43.4,43.4,43.4c23.9,0,43.4-19.5,43.4-43.4 C442.5,230.1,423,210.6,399.1,210.6z M399.1,269.2c-8.4,0-15.2-6.8-15.2-15.2s6.8-15.2,15.2-15.2s15.2,6.8,15.2,15.2 C414.3,262.4,407.5,269.2,399.1,269.2z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M340.6,328c-23.9,0-43.4,19.5-43.4,43.4c0,23.9,19.5,43.4,43.4,43.4c23.9,0,43.4-19.5,43.4-43.4 C383.9,347.4,364.5,328,340.6,328z M340.6,386.5c-8.4,0-15.2-6.8-15.2-15.2s6.8-15.2,15.2-15.2s15.2,6.8,15.2,15.2 C355.7,379.7,348.9,386.5,340.6,386.5z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M204.1,341.9c-23.9,0-43.4,19.5-43.4,43.4c0,23.9,19.5,43.4,43.4,43.4c23.9,0,43.4-19.5,43.4-43.4 C247.4,361.3,228,341.9,204.1,341.9z M204.1,400.4c-8.4,0-15.2-6.8-15.2-15.2c0-8.4,6.8-15.2,15.2-15.2c8.4,0,15.2,6.8,15.2,15.2 C219.2,393.6,212.4,400.4,204.1,400.4z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M95.8,263.9c-23.9,0-43.4,19.5-43.4,43.4c0,23.9,19.5,43.4,43.4,43.4c23.9,0,43.4-19.5,43.4-43.4 C139.2,283.4,119.8,263.9,95.8,263.9z M95.8,322.5c-8.4,0-15.2-6.8-15.2-15.2s6.8-15.2,15.2-15.2c8.4,0,15.2,6.8,15.2,15.2 S104.2,322.5,95.8,322.5z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+
+                    </div>Marketing
+                </button>
+                <button id="programacaoBotao">
+                    <div class="svgProgramacao">
+                        <svg fill="#f8f8f8" height="200px" width="200px" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 507.992 507.992" xml:space="preserve" stroke="#f8f8f8">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M506.47,431.896l-47.8-96.9v-265.1c0-7.8-6.3-14.1-14.1-14.1H63.37c-7.8,0-14.1,6.3-14.1,14.1v265.1l-47.8,96.8 c-2.2,4.4-1.9,9.6,0.7,13.7c2.6,4.1,7.1,6.7,12,6.7h479.8c4.9,0,9.4-2.5,12-6.7C508.47,441.396,508.67,436.196,506.47,431.896z M77.569,83.996h352.9v240.2h-352.9V83.996z M36.769,423.996l35.4-71.5h363.6l35.4,71.5H36.769z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M269.77,374.096h-31.6c-7.8,0-14.1,6.3-14.1,14.1c0,7.8,6.3,14.1,14.1,14.1h31.6c7.8,0,14.1-6.3,14.1-14.1 C283.87,380.396,277.57,374.096,269.77,374.096z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M153.87,187.196h-16.3c-4.5,0-8.2,3.7-8.2,8.2s3.7,8.2,8.2,8.2h8v74.1c0,4.5,3.7,8.2,8.2,8.2s8.2-3.7,8.2-8.2v-82.3 C162.07,190.796,158.37,187.196,153.87,187.196z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M376.27,216.596c0-16.3-13.2-29.4-29.4-29.4s-29.4,13.2-29.4,29.4c0,5.2,4.2,9.3,9.3,9.3c5.2,0,9.3-4.2,9.3-9.3 c0-5.9,4.8-10.7,10.7-10.7s10.7,4.8,10.7,10.7c0,5.9-4.8,10.7-10.7,10.7c-5.2,0-9.3,4.2-9.3,9.3c0,5.2,4.2,9.3,9.3,9.3 c5.9,0,10.7,4.8,10.7,10.7c0,5.9-4.8,10.7-10.7,10.7c-5.9,0-10.7-4.8-10.7-10.7c0-5.2-4.2-9.3-9.3-9.3c-5.2,0-9.3,4.2-9.3,9.3 c0,16.2,13.2,29.4,29.4,29.4s29.4-13.2,29.4-29.4c0-7.7-3-14.8-7.9-20C373.27,231.396,376.27,224.296,376.27,216.596z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M271.07,205.196h-37.2l29.3-29.8c0.2-0.2,0.5-0.5,0.7-0.8c4.3-5.7,6.6-12.4,6.6-19.5c0-17.8-14.5-32.2-32.2-32.2 c-17.8,0-32.2,14.5-32.2,32.2c0,4.5,3.7,8.2,8.2,8.2s8.2-3.7,8.2-8.2c0-8.7,7.1-15.8,15.8-15.8s15.8,7.1,15.8,15.8 c0,3.3-1,6.5-2.9,9.2l-42.7,43.4c-2.3,2.4-3,5.9-1.7,9c1.3,3.1,4.3,5.1,7.6,5.1h56.9c4.5,0,8.2-3.7,8.2-8.2 C279.37,208.896,275.67,205.196,271.07,205.196z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+
+                    </div>Programação
+                </button>
+                <button id="francesBotao">
+                    <div class="svgFrances">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#f8f8f8">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M9.05735 5.91352L9.4223 5.78679C11.0919 5.20704 12.9081 5.20704 14.5777 5.78679L14.9426 5.91352C15.9748 6.27193 16.521 7.39922 16.1626 8.43138C16.1262 8.53616 16.0811 8.63769 16.0277 8.73491C15.2843 10.0881 14.8374 11.5839 14.7167 13.1231L14.5777 14.894C12.9516 15.6909 11.0484 15.6909 9.4223 14.894L9.28333 13.1231C9.16255 11.5839 8.71566 10.0881 7.97234 8.73491C7.44629 7.77726 7.79618 6.57448 8.75383 6.04844C8.85104 5.99503 8.95258 5.9499 9.05735 5.91352ZM4.68671 14.5092L6.69101 15.688C7.13399 15.9486 7.70405 15.8061 7.97234 15.3677C8.28431 14.8581 8.76764 14.4762 9.33567 14.2906L9.4223 14.2623L9.34685 13.4487C9.18408 11.6936 8.66217 9.99071 7.81354 8.44581L7.40847 7.7084L6.5714 8.04755C5.1769 8.61256 4.07477 9.72421 3.52178 11.1235C3.02326 12.385 3.51756 13.8215 4.68671 14.5092ZM3.25998 13.67L3.86413 14.0254L5.07242 14.736L5.65521 15.0788C5.97969 15.2696 6.09341 15.684 5.91179 16.0138L4.26689 19C3.14967 17.6062 2.74425 15.772 3.16991 14.0372L3.25998 13.67ZM19.3133 14.5092L17.309 15.688C16.866 15.9486 16.296 15.8061 16.0277 15.3677C15.7157 14.8581 15.2324 14.4762 14.6643 14.2906L14.5777 14.2623L14.6532 13.4487C14.8159 11.6936 15.3378 9.99071 16.1865 8.44581L16.5915 7.7084L17.4286 8.04755C18.8231 8.61256 19.9252 9.72421 20.4782 11.1235C20.9767 12.385 20.4824 13.8215 19.3133 14.5092ZM20.74 13.67L20.1359 14.0254L18.9276 14.736L18.3448 15.0788C18.0203 15.2696 17.9066 15.684 18.0882 16.0138L19.7331 19C20.8503 17.6062 21.2557 15.772 20.8301 14.0372L20.74 13.67Z"
+                                    stroke="#f8f8f8" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                    </div>Francês
+                </button>
+                <button id="espanholBotao">
+                    <div class="svgEspanhol"><svg fill="#f8f8f8" height="200px" width="200px" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 511.999 511.999" xml:space="preserve" stroke="#f8f8f8">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M151.924,208.352l-8.539-11.735l4.826-13.688c1.495-4.245,0.472-8.882-2.672-12.101c-3.144-3.22-7.755-4.353-12.033-2.959 l-13.799,4.496l-11.527-8.818c-3.574-2.735-8.301-3.196-12.334-1.199c-4.034,1.996-6.537,6.03-6.533,10.531l0.012,14.512 l-11.949,8.237c-3.705,2.554-5.602,6.906-4.951,11.359c0.651,4.453,3.713,8.081,7.996,9.468l13.806,4.473l4.142,13.909 c1.284,4.314,4.837,7.463,9.274,8.22c0.672,0.114,1.344,0.171,2.009,0.171c3.72,0,7.225-1.759,9.466-4.849l8.521-11.748 l14.509,0.36c4.484,0.14,8.592-2.294,10.682-6.28C154.918,216.726,154.572,211.99,151.924,208.352z M123.745,210.18 c-2.718-0.064-5.24,1.193-6.82,3.372l-5.557,7.661l-2.702-9.071c-0.767-2.579-2.755-4.615-5.314-5.444l-9.005-2.918l7.795-5.369 c2.215-1.527,3.537-4.046,3.535-6.737l-0.008-9.465l7.517,5.75c2.136,1.635,4.941,2.113,7.499,1.28l8.999-2.932l-3.147,8.926 c-0.895,2.537-0.483,5.353,1.1,7.528l5.569,7.652L123.745,210.18z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M227.735,367.168l-33.106-66.946c12.435-13.283,20.99-31.042,24.795-52.041c0.283-1.561,0.53-3.133,0.756-4.713 c0.003-0.021,0.007-0.043,0.009-0.063c4.323-30.167-1.537-63.346-16.698-94.008c-15.966-32.286-40.41-58.078-68.831-72.624 c-29.228-14.96-59.195-16.341-84.377-3.888C25.104,85.339,8.012,109.99,2.158,142.301c-5.693,31.414-0.034,66.496,15.933,98.782 c15.161,30.657,37.968,55.45,64.562,70.328c0.025,0.014,0.05,0.027,0.074,0.041c1.388,0.776,2.786,1.532,4.195,2.254 c1.318,0.675,2.636,1.31,3.956,1.929c0.001,0.001,0.002,0.001,0.003,0.002c0,0,0.001,0,0.002,0.001 c14.727,6.907,29.577,10.387,43.849,10.387c2.975,0,5.925-0.158,8.845-0.46l45.367,91.739c1.426,2.883,4.321,4.553,7.334,4.553 c1.216,0,2.452-0.273,3.617-0.849c4.044-2.001,5.702-6.905,3.7-10.951l-43.487-87.938c3.818-1.222,7.553-2.728,11.188-4.525 c3.707-1.833,7.232-3.937,10.578-6.283l31.206,63.104c1.426,2.883,4.321,4.553,7.334,4.553c1.216,0,2.452-0.272,3.617-0.849 C228.079,376.118,229.736,371.215,227.735,367.168z M57.533,87.541c9.212-4.555,19.142-6.714,29.362-6.714 c10.073,0,20.419,2.119,30.614,6.094l-96.831,47.885C26.977,112.884,39.814,96.303,57.533,87.541z M16.511,172.769 c-0.135-2.924-0.168-5.823-0.109-8.694c0.004-0.211,0.009-0.423,0.014-0.634c0.032-1.251,0.083-2.496,0.151-3.736 c0.026-0.456,0.059-0.908,0.089-1.362c0.072-1.092,0.148-2.182,0.25-3.264c0.005-0.06,0.014-0.119,0.02-0.179l118.789-58.744 c4.961,3.095,9.789,6.612,14.448,10.52L16.511,172.769z M32.745,233.836c-7.051-14.257-11.868-29.064-14.376-43.748l144.42-71.418 c9.997,10.749,18.899,23.518,26.049,37.976c8.667,17.527,13.958,35.884,15.722,53.821L65.972,279 C53.053,266.932,41.564,251.67,32.745,233.836z M79.896,290.352l125.232-61.929c-0.041,1.138-0.11,2.267-0.181,3.394 c-0.029,0.456-0.056,0.913-0.089,1.368c-0.073,0.979-0.162,1.952-0.258,2.922c-0.072,0.715-0.153,1.429-0.237,2.141 c-0.098,0.829-0.194,1.659-0.31,2.481c-0.143,1.017-0.308,2.027-0.477,3.035c-0.081,0.484-0.148,0.973-0.235,1.454L94.329,299.125 C89.413,296.607,84.591,293.676,79.896,290.352z M164.051,302.94c-9.212,4.555-19.143,6.715-29.363,6.714 c-6.461-0.001-13.034-0.885-19.607-2.554l81.951-40.526C189.99,283.098,178.696,295.698,164.051,302.94z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <circle cx="154.178" cy="145.262" r="8.174"></circle>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <circle cx="42.92" cy="195.245" r="8.174"></circle>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <circle cx="174.788" cy="202.177" r="8.174"></circle>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <circle cx="73.448" cy="250.089" r="8.174"></circle>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M509.331,111.298c-7.21-39.792-28.213-70.13-59.14-85.423c-30.927-15.295-67.786-13.571-103.785,4.854 c-35.19,18.01-65.471,49.973-85.265,90.001c-18.799,38.014-26.066,79.125-20.715,116.482c0.003,0.025,0.008,0.05,0.011,0.075 c0.281,1.954,0.586,3.901,0.936,5.833c4.883,26.948,16.098,49.55,32.43,66.091l-69.007,139.545 c-3.914,7.915-4.511,16.879-1.682,25.244c2.829,8.364,8.745,15.126,16.66,19.04c4.698,2.323,9.684,3.422,14.6,3.422 c12.185,0,23.927-6.758,29.684-18.4l69.175-139.883c4.003,0.464,8.055,0.702,12.149,0.702c17.568,0,35.867-4.291,54.023-12.805 c0.001,0,0.002-0.001,0.002-0.001c0.002-0.001,0.003-0.002,0.005-0.003c1.63-0.765,3.26-1.551,4.887-2.384 c1.748-0.895,3.48-1.833,5.202-2.796c0.024-0.013,0.048-0.027,0.073-0.04c32.935-18.424,61.193-49.152,79.99-87.165 C509.359,193.661,516.378,150.196,509.331,111.298z M405.322,31.914c13.278,0,25.991,2.863,37.621,8.615 c24.686,12.207,41.165,35.794,48.444,64.906L362.001,41.452C376.673,35.113,391.314,31.914,405.322,31.914z M249.403,470.815 c-1.978,4-5.395,6.991-9.623,8.421c-4.227,1.429-8.758,1.127-12.758-0.85c-4-1.978-6.992-5.396-8.421-9.624 c-1.43-4.227-1.128-8.758,0.85-12.758l67.163-135.816c4.376,3.145,9.014,5.94,13.901,8.356c5.221,2.582,10.609,4.678,16.134,6.291 L249.403,470.815z M307.762,313.891c-6.19-3.062-11.908-6.871-17.126-11.347c-0.706-1.021-1.659-1.889-2.817-2.518 c-10.518-9.875-18.773-22.656-24.377-37.758l112.264,55.516C352.27,324.926,328.572,324.182,307.762,313.891z M395.975,309.57 l-138.327-68.406c-1.564-8.291-2.415-16.913-2.547-25.773l162.903,80.559C410.883,301.223,403.513,305.781,395.975,309.57z M474.91,226.442c-11.391,23.033-26.307,42.683-43.093,58.102l-176.065-87.067c2.089-23.15,8.857-46.879,20.043-69.5 c9.155-18.514,20.696-35.13,33.974-49.168l183.56,90.774C490.281,188.372,484.2,207.657,474.91,226.442z M495.272,152.306 L322.35,66.793c6.939-6.042,14.195-11.392,21.687-15.987l150.776,74.561C495.708,134.111,495.862,143.125,495.272,152.306z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M416.017,179.389l-15.85-10.927l0.015-19.252c0.003-4.845-2.692-9.188-7.035-11.335c-4.34-2.145-9.43-1.651-13.276,1.292 l-15.29,11.698l-18.305-5.964c-4.606-1.502-9.569-0.28-12.954,3.186c-3.384,3.466-4.487,8.458-2.876,13.028l6.401,18.157 l-11.328,15.566c-2.851,3.917-3.224,9.015-0.972,13.304c2.251,4.29,6.65,6.885,11.5,6.76l19.247-0.476l11.303,15.583 c2.413,3.328,6.185,5.221,10.191,5.221c0.715,0,1.439-0.061,2.162-0.184c4.775-0.815,8.6-4.205,9.984-8.849l5.494-18.452 l18.315-5.935c4.608-1.492,7.906-5.397,8.607-10.191S420.006,182.139,416.017,179.389z M385.298,193.516 c-2.559,0.829-4.547,2.865-5.314,5.444l-4.572,15.357l-9.408-12.97c-1.54-2.123-4.002-3.374-6.617-3.374 c-0.068,0-0.135,0.001-0.203,0.002l-16.018,0.397l9.428-12.956c1.584-2.175,1.995-4.991,1.1-7.528l-5.327-15.112l15.236,4.963 c2.559,0.835,5.362,0.355,7.499-1.28l12.726-9.736l-0.013,16.023c-0.002,2.691,1.32,5.21,3.535,6.737l13.192,9.094 L385.298,193.516z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <circle cx="321.031" cy="114.636" r="8.174"></circle>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <circle cx="460.321" cy="177.207" r="8.174"></circle>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <circle cx="295.233" cy="185.893" r="8.174"></circle>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <circle cx="422.109" cy="245.882" r="8.174"></circle>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg></div>Espanhol
+                </button>
+
+            </div>
+
+            <div class="segundoBlocoHero">
+                <h2 id="tituloCatalogo">Catálogo</h2>
+                <p id="descricaoCatalogo">Nossa biblioteca reúne uma seleção especial de livros voltados para
+                    tecnologia,
+                    programação, marketing e inovação. <br> Encontre conteúdos sobre desenvolvimento de software,
+                    estratégias digitais, criatividade, negócios e tendências do mercado.
+                </p>
+
+
+                <div class="contatoCarrossel">
+                    <button id="anterior"><svg fill="#1E3A24" height="200px" width="200px" version="1.1" id="XMLID_64_"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 24 24" xml:space="preserve" stroke="#1E3A24">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g id="link-previous">
+                                    <g>
+                                        <polygon
+                                            points="10.3,20.7 1.6,12 10.3,3.3 11.7,4.7 5.5,11 22,11 22,13 5.5,13 11.7,19.3 ">
+                                        </polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg></button>
+                    <div class="primeiroContato" id="primeiroContato">
+                    </div>
+                    <button id="proximo"><svg fill="#1E3A24" height="200px" width="200px" version="1.1" id="XMLID_301_"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 24 24" xml:space="preserve" stroke="#1E3A24">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g id="link-next">
+                                    <g>
+                                        <polygon
+                                            points="13.7,20.7 12.3,19.2 18.6,13 2,13 2,11 18.6,11 12.3,4.8 13.7,3.3 22.4,12 ">
+                                        </polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg></button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="reservas" id="reservas">
+
+            <div class="buscarPorTipo">
+                <h2>Busca Avançada</h2>
+                <form action="buscaAvancada">
+                    <label for="livroInput">Título:</label>
+                    <input type="text" id="livroInput" placeholder="Digite o Nome do Livro">
+                    <label for="editoraInput">Editora:</label>
+                    <input type="text" id="editoraInput" placeholder="Escreva Aqui a Editora">
+                    <label for="isbnInput">ISBN:</label>
+                    <input type="number" id="isbnEditora" placeholder="Insira neste Campo o Código ISBN">
+                    <label for="categoriaInput">Categoria:</label>
+                    <select value="categoriaInput">
+                        <option name="desabilitadoInput" id="desabilitadoInput">Selecione Abaixo</option>
+                        <option name="marketingInput" id="marketingInput">Marketing</option>
+                        <option name="programacaoInput" id="programacaoInput">Programacao</option>
+                        <option name="francesInput" id="francesInput">Frances</option>
+                        <option name="espanholInput" id="espanholInput">Espanhol</option>
+                    </select>
+                    <button type="submit" id="encontrar">Encontrar Exemplar</button>
+
+
+                </form>
+
+            </div>
+
+            <div class="livroEscolhido">
+                <div>
+                    <h2>Visualização da Escolha:</h2>
+
+                    <div id="cardAqui"></div>
+
+                </div>
+
+                <div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>✿ Obrigada por visitar este projeto ✿</p>
+        <p>Lívia Helena</p>
+        <p>UX/UI Design | Front-end</p>
+        <p>© 2026</p>
+
+    </footer>
+
+    <script type="module" src="module/dados.js"></script>
+    <script type="module" src="module/script.js"></script>
+</body>
+
+</html>
