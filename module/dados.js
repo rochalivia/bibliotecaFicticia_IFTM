@@ -6,7 +6,8 @@ export const livrosPorArray = [
         numeroPaginas: 272,
         ISBN: 9788532520838,
         imagem: "./images/livroDesign.jpg",
-        categoria: ["Programacao", "Destaques"]
+        categoria: ["Programacao", "Destaques"],
+        unidades: 2
 
     }
     ,
@@ -17,7 +18,8 @@ export const livrosPorArray = [
         numeroPaginas: 328,
         ISBN: 9788575229293,
         imagem: "./images/livroAlgoritmo.jpg",
-        categoria: ["Programacao", "Destaques"]
+        categoria: ["Programacao", "Destaques"],
+        unidades: 3
 
 
     }
@@ -30,7 +32,8 @@ export const livrosPorArray = [
         numeroPaginas: 968,
         ISBN: 9788543004792,
         imagem: "./images/livroJava.jpg",
-        categoria: "Programacao"
+        categoria: "Programacao",
+        unidades:1
 
     },
 
@@ -41,7 +44,8 @@ export const livrosPorArray = [
         numeroPaginas: 240,
         ISBN: 6555203536,
         imagem: "./images/livroCyberseguranca.jpg",
-        categoria: "Programacao"
+        categoria: "Programacao",
+        unidades:2
     }
     ,
     {
@@ -52,7 +56,8 @@ export const livrosPorArray = [
         numeroPaginas: 488,
         ISBN: 9788576082101,
         imagem: "./images/livroSQL.jpg",
-        categoria: "Programacao"
+        categoria: "Programacao",
+        unidades: 2
 
     }
     ,
@@ -64,7 +69,8 @@ export const livrosPorArray = [
         numeroPaginas: 480,
         ISBN: 9786555208368,
         imagem: "./images/livroLinux.jpg",
-        categoria: "Programacao"
+        categoria: "Programacao",
+        unidades: 1
 
     },
 
@@ -75,7 +81,8 @@ export const livrosPorArray = [
         numeroPaginas: 159,
         ISBN: 9786588280348,
         imagem: "./images/livroStorytelling.jpg",
-        categoria: "Marketing"
+        categoria: "Marketing",
+        unidades: 2
     }
     ,
 
@@ -86,7 +93,8 @@ export const livrosPorArray = [
         numeroPaginas: 189,
         ISBN: 978853961139 - 3,
         imagem: "./images/livroBranding.jpeg",
-        categoria: "Marketing"
+        categoria: "Marketing",
+        unidades: 2
 
 
     }
@@ -98,7 +106,8 @@ export const livrosPorArray = [
         numeroPaginas: 272,
         ISBN: 8577805840,
         imagem: "./images/livroElementos.jpg",
-        categoria: "Marketing"
+        categoria: "Marketing",
+        unidades: 2
     }
     ,
     {
@@ -108,7 +117,8 @@ export const livrosPorArray = [
         ISBN: 7897763453913,
         numeroPaginas: 175,
         imagem: "./images/livroDesignGrafico.jpg",
-        categoria: "Marketing"
+        categoria: "Marketing",
+        unidades: 3
     }
     ,
     {
@@ -118,7 +128,8 @@ export const livrosPorArray = [
         ISBN: 8574168364,
         numeroPaginas: 191,
         imagem: "./images/livroNaoDesigner.jpg",
-        categoria: "Marketing"
+        categoria: "Marketing",
+        unidades: 1
 
 
     }
@@ -131,7 +142,8 @@ export const livrosPorArray = [
 
         ISBN: "6588280058",
         imagem: "./images/livroPsicoCores.jpg",
-        categoria: ["Marketing", "Destaques"]
+        categoria: ["Marketing", "Destaques"],
+        unidades: 2
 
     }
     ,
@@ -143,6 +155,7 @@ export const livrosPorArray = [
         ISBN: 9788416273065,
         imagem: "./images/francesDefiUm.jpeg",
         categoria: "Frances",
+        unidades: 3,
 
     },
     {
@@ -152,7 +165,8 @@ export const livrosPorArray = [
         numeroPaginas: 118,
         ISBN: 9788416657469,
         categoria: "Frances",
-        imagem: "./images/francesDefiUm.jpeg"
+        imagem: "./images/francesDefiUm.jpeg",
+        unidades: 3
 
     }
     ,
@@ -164,7 +178,8 @@ export const livrosPorArray = [
         numeroPaginas: 96,
         ISBN: 1607964155,
         categoria: "Frances",
-        imagem: "./images/pequenoPrincipe.jpg"
+        imagem: "./images/pequenoPrincipe.jpg",
+        unidades: 1
 
     }
     ,
@@ -175,7 +190,8 @@ export const livrosPorArray = [
         ISBN: "154287212X",
         numeroPaginas: 74,
         categoria: "Frances",
-        imagem: "./images/rousseau.jpg"
+        imagem: "./images/rousseau.jpg",
+        unidades: 1
 
 
     }
@@ -188,7 +204,8 @@ export const livrosPorArray = [
         ISBN: "207032351X",
         numeroPaginas: 208,
         categoria: "Frances",
-        imagem: "./images/segundoSexo.jpg"
+        imagem: "./images/segundoSexo.jpg",
+        unidades: 1
 
 
 
@@ -202,7 +219,8 @@ export const livrosPorArray = [
         ISBN: 1466307498,
         categoria: "Frances",
         numeroPaginas: 273,
-        imagem: "./images/baudelaire.jpg"
+        imagem: "./images/baudelaire.jpg",
+        unidades: 2
 
     }
     ,
@@ -213,7 +231,8 @@ export const livrosPorArray = [
         ISBN: "9788497783736",
         categoria: "Espanhol",
         numeroPaginas: 55,
-        imagem: "./images/espanholUm.jpg"
+        imagem: "./images/espanholUm.jpg",
+        unidades: 1
     }
     ,
     {
@@ -223,7 +242,8 @@ export const livrosPorArray = [
         ISBN: 9788497783781,
         categoria: "Espanhol",
         numeroPaginas: 131,
-        imagem: "./images/espanholDois.jpeg"
+        imagem: "./images/espanholDois.jpeg",
+        unidades: 2
     }
     ,
     {
@@ -233,7 +253,8 @@ export const livrosPorArray = [
         ISBN: "154536432X",
         categoria: "Espanhol",
         numeroPaginas: 230,
-        imagem: "./images/domQuixote.jpg"
+        imagem: "./images/domQuixote.jpg",
+        unidades: 3
     }
     ,
 
@@ -244,7 +265,8 @@ export const livrosPorArray = [
         ISBN: "9877256967",
         categoria: "Espanhol",
         numeroPaginas: 96,
-        imagem: "./images/cemAnos.jpg"
+        imagem: "./images/cemAnos.jpg",
+        unidades: 3
     }
     ,
 
@@ -256,7 +278,8 @@ export const livrosPorArray = [
         ISBN: 9682325579,
         categoria: "Espanhol",
         numeroPaginas: 379,
-        imagem: "./images/galeanoUm.jpg"
+        imagem: "./images/galeanoUm.jpg",
+        unidades: 2
     }
     ,
     {
@@ -266,7 +289,8 @@ export const livrosPorArray = [
         ISBN: "8525414883",
         categoria: "Espanhol",
         numeroPaginas: 274,
-        imagem: "./images/galeanoDois.jpg"
+        imagem: "./images/galeanoDois.jpg",
+        unidades: 1
     }
 
 

@@ -116,9 +116,10 @@ function gerandoLivrosPorArray(livrosPorArray, primeiroContato) {
 
         card.appendChild(botaoReserva)
 
-        const status = document.createElement('p')
-        status.textContent = `Disponível para Reserva`
-        card.appendChild(status)
+        const unidadesDisponiveis = document.createElement('p')
+        unidadesDisponiveis.innerHTML = `Disponível ${livrosPorArray[i].unidades} unidade(s) para reserva`
+        card.appendChild(unidadesDisponiveis)
+
 
         primeiroContato.appendChild(card)
 
