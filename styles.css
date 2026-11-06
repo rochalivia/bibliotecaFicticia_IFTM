@@ -155,7 +155,10 @@ ul {
     cursor: pointer;
 }
 
-
+.buscaLivro a {
+    color: inherit;
+    text-decoration: none;
+}
 .buscaLivroAvancada {
     height: 40px;
     width: 200px;
@@ -400,7 +403,11 @@ ul {
 
 }
 
-.menu button {
+.programacaoBotao,
+.destaquesBotao,
+.marketingBotao,
+.francesBotao,
+.espanholBotao {
     height: 42px;
     width: 100%;
     padding: 1rem;
@@ -418,6 +425,36 @@ ul {
     border-radius: 10px;
     cursor: pointer;
 
+}
+
+.minhasReservas a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.minhasReservas {
+    height: 44px;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    border-style: none;
+    transition: transform 0.2s ease;
+    color: #0c1a0f;
+    background-color: #cbfabe;
+    font-size: 0.8rem;
+    border: 1.2px solid #0c1a0f;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.minhasReservas:hover {
+    transform: translateY(-3px);
 }
 
 .menu h2 {
@@ -474,36 +511,44 @@ ul {
     width: 100%;
     background-color: #edffe8;
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    padding: 6rem;
+    grid-template-columns: 2fr 2fr 2fr;
+    padding: 8rem;
     gap: 0.8rem;
 
+}
+
+.visualizacaoEscolha {
+    border: 0.75px dashed rgb(120, 118, 118);
+    background-color: #e1ffd6;
+    border-radius: 1rem;
+    padding: 2rem;
 }
 
 .buscarPorTipo {
     border: 0.75px dashed rgb(120, 118, 118);
     background-color: #e1ffd6;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .livroEscolhido {
     border: 0.75px dashed rgb(120, 118, 118);
     background-color: #e1ffd6;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .listaReserva {
     border: 0.75px dashed rgb(120, 118, 118);
     background-color: #e1ffd6;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .buscarPorTipo h2,
 .listaReserva h2,
-.livroEscolhido h2 {
+.livroEscolhido h2,
+.visualizacaoEscolha h2 {
     font-size: 1.5rem;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: #1E3A24;
@@ -556,8 +601,8 @@ ul {
     align-items: center;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 3%;
-    
+    padding: 4%;
+
 }
 
 .buscarPorTipo button {
@@ -575,4 +620,50 @@ ul {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 600;
     cursor: pointer;
+}
+
+.livroListaItem {
+    width: 100%;
+}
+
+.livroListaItem h3 {
+
+    font-size: 1rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #1E3A24;
+    font-weight: 500;
+
+}
+
+.livroListaItem h4 {
+    font-size: 0.95rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #1E3A24;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.livroListaItem button {
+    height: 40px;
+    width: 200px;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 0.5rem;
+    border-style: none;
+    color: #0c1a0f;
+    background-color: #87fb67;
+    font-size: 0.8rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.livroListaItem p {
+    font-size: 0.80rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #555a56;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
 }
