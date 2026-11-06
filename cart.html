@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+
+            <a href="./index.html"><img src="images/logotipoIFTM.png" alt="logotipo de IFTM" class="logotipo"></a>
+
+
+            <form class="buscar">
+                <input type="text" id="buscaRapidaInput" placeholder="Busca Rápida por Título e/ou Autor"
+                    class="inputBusca">
+                <button type="submit" class="buscaLivro" id="buscaRapidaBotao"><a href="#reservas">Encontrar
+                        Livro</a></button>
+                <button type="submit" class="buscaLivroAvancada"><a href="#reservas">Busca Avançada</a></button>
+            </form>
+
+            <a href="./cart.html">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g clip-path="url(#clip0_15_35)">
+                            <rect width="24" height="24"></rect>
+                            <path
+                                d="M5.33331 6H19.8672C20.4687 6 20.9341 6.52718 20.8595 7.12403L20.1095 13.124C20.0469 13.6245 19.6215 14 19.1172 14H16.5555H9.44442H7.99998"
+                                stroke="#f0f7ed" stroke-linejoin="round"></path>
+                            <path
+                                d="M2 4H4.23362C4.68578 4 5.08169 4.30341 5.19924 4.74003L8.30076 16.26C8.41831 16.6966 8.81422 17 9.26638 17H19"
+                                stroke="#f0f7ed" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <circle cx="10" cy="20" r="1" stroke="#f0f7ed" stroke-linejoin="round"></circle>
+                            <circle cx="17.5" cy="20" r="1" stroke="#f0f7ed" stroke-linejoin="round"></circle>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_15_35">
+                                <rect width="24" height="24" fill="white"></rect>
+                            </clipPath>
+                        </defs>
+                    </g>
+                </svg></a>
+
+
+        </header>
+
+        <section class="reservas" id="reservas">
+
+            <div class="buscarPorTipo">
+                <h2>Busca Avançada</h2>
+                <form action="buscaAvancada">
+                    <label for="livroInput">Título:</label>
+                    <input type="text" id="livroInput" placeholder="Digite o nome do Livro">
+                    <label for="editoraInput">Editora:</label>
+                    <input type="text" id="editoraInput" placeholder="Escreva aqui a Editora">
+                    <label for="isbnInput">ISBN:</label>
+                    <input type="number" id="isbnEditora" placeholder="Insira neste campo o Código ISBN">
+                    <label for="categoriaInput">Categoria:</label>
+                    <select value="categoriaInput">
+                        <option name="desabilitadoInput" id="desabilitadoInput">Selecione Abaixo</option>
+                        <option name="marketingInput" id="marketingInput">Marketing</option>
+                        <option name="programacaoInput" id="programacaoInput">Programacao</option>
+                        <option name="francesInput" id="francesInput">Frances</option>
+                        <option name="espanholInput" id="espanholInput">Espanhol</option>
+                    </select>
+                    <button type="submit" id="encontrar">Encontrar Exemplar</button>
+
+
+                </form>
+
+            </div>
+
+            <div class="visualizacaoEscolha" id="visualizacaoEscolha">
+                <h2>Visualizar Busca:</h2>
+                <div class="livroPesquisado"></div>
+                <p><a href="./index.html">Voltar para Página Principal</a></p>
+
+            </div>
+
+
+        </section>
+
+        <footer class="footer">
+            <p>✿ Obrigada por visitar este projeto ✿</p>
+            <p>Lívia Helena</p>
+            <p>UX/UI Design | Front-end</p>
+            <p>© 2026</p>
+
+        </footer>
+
+    </main>
+    <script type="module" src="module/dados.js"></script>
+    <script type="module" src="module/script.js"></script>
+</body>
+
+</html>

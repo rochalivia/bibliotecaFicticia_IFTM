@@ -2,25 +2,24 @@ import { livrosPorArray } from '../module/dados.js'
 
 
 const primeiroContato = document.querySelector('div#primeiroContato')
-const cardLista = document.querySelector('div#livroListaItem')
 const tituloCatalogo = document.querySelector('h2#tituloCatalogo')
 const descricaoCatalogo = document.querySelector('p#descricaoCatalogo')
 const proximo = document.querySelector('button#proximo')
 const anterior = document.querySelector('button#anterior')
 
 
-let cards = []
+let card = []
 let inicio = 0
 
 
 function mostrarCards() {
 
-    for (let i = 0; i < cards.length; i++) {
+    for (let i = 0; i < card.length; i++) {
 
         if (i >= inicio && i < inicio + 3) {
-            cards[i].classList.remove('escondido')
+            card[i].classList.remove('escondido')
         } else {
-            cards[i].classList.add('escondido')
+            card[i].classList.add('escondido')
         }
 
     }
@@ -28,7 +27,7 @@ function mostrarCards() {
 }
 
 proximo.addEventListener('click', function () {
-    if (inicio + 3 < cards.length) {
+    if (inicio + 3 < card.length) {
         inicio = inicio + 3
         mostrarCards()
     }
@@ -75,23 +74,45 @@ function gerandoLivrosPorArray(livrosPorArray, primeiroContato) {
         card.appendChild(codigoISBN)
 
 
-        const botaoReserva = document.createElement('button')
-        botaoReserva.classList.add('botaoReserva')
-        botaoReserva.textContent = `Reservar`
-        botaoReserva.addEventListener('click', reservar)
+        const botaoReserva = document.createElement('button');
 
-        // seu hover, agora dentro do for: todo botão novo já nasce com ele
-        botaoReserva.addEventListener('mouseover', mudarCorBotao)
+        botaoReserva.classList.add('botaoReserva');
+        botaoReserva.textContent = 'Reservar';
+
+        botaoReserva.addEventListener('click', reservaCor);
+
+        let reservado = false;
+
+        function reservaCor() {
+            reservado = !reservado;
+
+            if (reservado) {
+                botaoReserva.style.backgroundColor = '#87fb67';
+                botaoReserva.style.color = '#0c1a0f';
+                botaoReserva.textContent = 'Reservado';
+            } else {
+                botaoReserva.style.backgroundColor = '#0c1a0f';
+                botaoReserva.style.color = '#f8f8f8';
+                botaoReserva.textContent = 'Reservar';
+            }
+        }
+
+        botaoReserva.addEventListener('mouseover', mudarCorBotao);
+
         function mudarCorBotao() {
             botaoReserva.style.backgroundColor = '#87fb67';
             botaoReserva.style.color = '#0c1a0f';
         }
 
-        botaoReserva.addEventListener('mouseout', voltarNormal)
+        botaoReserva.addEventListener('mouseout', voltarNormal);
+
         function voltarNormal() {
-            botaoReserva.style.backgroundColor = '#0c1a0f';
-            botaoReserva.style.color = '#f8f8f8';
+            if (botaoReserva.textContent !== 'Reservado') {
+                botaoReserva.style.backgroundColor = '#0c1a0f';
+                botaoReserva.style.color = '#f8f8f8';
+            }
         }
+
 
         card.appendChild(botaoReserva)
 
@@ -103,7 +124,7 @@ function gerandoLivrosPorArray(livrosPorArray, primeiroContato) {
 
 
     }
-    cards = primeiroContato.querySelectorAll('.livroCard')
+    card = primeiroContato.querySelectorAll('.livroCard')
     inicio = 0
     mostrarCards()
 
@@ -201,84 +222,3 @@ function alteraEspanhol() {
 }
 
 
-
-function reservar(evento) {
-    const botao = evento.currentTarget
-    const card = botao.parentElement
-
-    adicionarNaLista(card)
-
-    botao.textContent = 'Reservado'
-    botao.disabled = true
-}
-
-function adicionarNaLista(card) {
-    const titulo = card.querySelector('h3').textContent
-    const autor = card.querySelector('p').textContent.replace('Autor: ', '')
-
-    const jaReservados = cardLista.querySelectorAll('h3')
-    for (let i = 0; i < jaReservados.length; i++) {
-        if (jaReservados[i].textContent === titulo) {
-            return
-        }
-    }
-
-    const item = document.createElement('div')
-
-    const itemTitulo = document.createElement('h3')
-    itemTitulo.textContent = titulo
-    item.appendChild(itemTitulo)
-
-    const itemAutor = document.createElement('h4')
-    itemAutor.textContent = autor
-    item.appendChild(itemAutor)
-
-    const botaoExcluir = document.createElement('button')
-    botaoExcluir.textContent = 'Cancelar Pedido'
-
-    botaoExcluir.addEventListener('click', excluirReserva)
-    function excluirReserva() {
-        item.remove()
-    }
-
-
-    item.appendChild(botaoExcluir)
-    const adendo = document.createElement('p')
-    adendo.innerHTML = '*Sua reserva é válida por até 3 dias úteis.* <br> Retirada na Biblioteca fisica da Escola.'
-    item.appendChild(adendo)
-
-
-    cardLista.appendChild(item)
-
-
-}
-
-
-
-
-const buscaInput = document.querySelector('input#buscaRapidaInput')
-const buscaBotao = document.querySelector('button#buscaRapidaBotao')
-
-buscaBotao.addEventListener('click', buscaRapida)
-
-function buscaRapida() {
-    const termo = buscaInput.value.trim().toLowerCase()
-
-    if (termo === '') {
-        alert('Digite o título ou o autor do livro.')
-        return
-    }
-
-    const resultado = livrosPorArray.filter(livro =>
-        livro.titulo.toLowerCase().includes(termo) ||
-        livro.autor.toLowerCase().includes(termo)
-
-
-    )
-
-    if (resultado.length === 0) {
-        alert('Nenhum livro encontrado.')
-        return
-    }
-
-}
